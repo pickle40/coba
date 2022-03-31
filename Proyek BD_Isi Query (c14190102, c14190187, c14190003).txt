@@ -1,0 +1,34 @@
+Isi Query
+
+1) Pasien:
+INSERT INTO pasien VALUES (001,1001,"Bagas",111111,"jalan iman bonjol",30,1,1,2001);
+INSERT INTO pasien VALUES (002,NULL,"Budi",111112,"jalan bonjol",20,2,5,2001);
+INSERT INTO pasien VALUES (003,1002,"Setiawan",111113,"jalan iman",31,3,9,2001);
+INSERT INTO pasien VALUES (004,NULL,"Bambang",111114,"jalan sumatera",32,4,11,2001);
+INSERT INTO pasien VALUES (005,1003,"Lily",111115,"jalan iman jawa",33,5,2,2001);
+INSERT INTO pasien VALUES (006,NULL,"Jagalan",111116,"jalan jawa",34,10,8,2001);
+INSERT INTO pasien VALUES (007,1004,"Bayu",111117,"jalan iman kalimantan",35,13,3,2001);
+INSERT INTO pasien VALUES (008,NULL,"Skak",111118,"jalan kalimantan",36,20,4,2001);
+INSERT INTO pasien VALUES (009,1005,"Happy",111119,"jalan iman papua",37,12,5,2001);
+INSERT INTO pasien VALUES (010,NULL,"Sad",1111110,"jalan papua",38,15,12,2001);
+INSERT INTO pasien VALUES (011,1001,"Angry",1111111,"jalan bandung",39,16,11,2001);
+INSERT INTO pasien VALUES (012,NULL,"Bird",11111112,"jalan jakarta",40,7,5,2001);
+INSERT INTO pasien VALUES (013,1001,"Sagittarius",141311112,"jalan Kembang",40,3,8,2020);
+INSERT INTO pasien VALUES (014,1001,"Betelgeuse",1115141112,"jalan Kembang Api",23,31,10,2020);
+
+2) Dokter
+INSERT INTO dokter VALUES (1001,"Bagusan","Jantung",1,1,2001,"Bagas");
+INSERT INTO dokter VALUES (1002,"Bambank","Kanker",2,3,2001,"Ales");
+INSERT INTO dokter VALUES (1003,"Judika","Paru-Paru",3,5,2001,"Halim");
+INSERT INTO dokter VALUES (1004,"Achmad","Hati",4,7,2001,"Fransisco");
+INSERT INTO dokter VALUES (1005,"Ari","Ginjal",5,9,2001,"Matius");
+
+3) Praktik
+INSERT INTO praktik VALUES (1001,01,"Senin",1,1,2001,"17:00","21:00");
+INSERT INTO praktik VALUES (1002,02,"Senin",1,1,2001,"12:00","16:00");
+INSERT INTO praktik VALUES (1002,03,"Selasa",2,3,2001,"12:00","17:00");
+INSERT INTO praktik VALUES (1003,04,"Selasa",1,1,2001,"14:00","17:00");
+INSERT INTO praktik VALUES (1003,05,"Rabu",3,5,2001,"10:00","13:00");
+INSERT INTO praktik VALUES (1004,06,"Rabu",1,1,2001,"15:00","20:00");
+INSERT INTO praktik VALUES (1004,07,"Kamis",4,7,2001,"9:00","14:00");
+INSERT INTO praktik VALUES (1005,08,"Jumat",5,9,2001,"11:00","15:00");

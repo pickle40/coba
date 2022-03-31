@@ -1,0 +1,38 @@
+(CREATE TABLE)
+1) dokter
+create TABLE dokter(ID_dokter int (50),
+                     Nama_dokter varchar (50),
+                     Spesialis varchar(13),
+		     Tanggal_awal_kerja INT (3),
+		     Bulan_awal_kerja INT (3),
+		     Tahun_awal_kerja INT (4),
+		     Pengganti_dokter varchar (50),
+                     CONSTRAINT dokter_pk PRIMARY KEY (ID_dokter)
+                     );
+
+2) Pasien
+create TABLE pasien(ID_Pasien INT (3),
+		     ID_Dokter INT (5),
+		     Nama_pasien varchar (50),
+            	     Password_pasien varchar (20),
+                     Alamat_pasien varchar(50),
+		     Umur_pasien INT (2),
+		     Tanggal_pendaftaran INT (2),
+		     Bulan_pendaftaran INT (2),
+		     Tahun_pendaftaran INT (4),
+                     CONSTRAINT pasien_pk PRIMARY KEY (ID_Pasien),
+		     CONSTRAINT dokter_pk1 FOREIGN KEY (ID_Dokter) REFERENCES dokter (ID_dokter)
+                     );
+
+3) Praktik
+create TABLE praktik (ID_Dokter INT (5),
+		      ID_Praktek INT (5),
+		      Hari varchar (20),
+		      Tanggal_praktek INT (3),
+		      Bulan_praktek INT (3),
+		      Tahun_praktek INT (4),
+		      Jam_Buka_praktek varchar (10),
+		      Jam_Tutup_Praktek varchar (10),
+		      CONSTRAINT praktek_pk PRIMARY KEY (ID_Praktek),
+		      CONSTRAINT dokter_pk2 FOREIGN KEY (ID_Dokter) REFERENCES dokter (ID_dokter)         
+                    );

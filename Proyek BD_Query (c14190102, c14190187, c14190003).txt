@@ -1,0 +1,42 @@
+Query
+
+(Orang 1 -> Billy Laurent Binarto / c14190102)
+
+1.
+SELECT d.nama_dokter, d.spesialis
+FROM dokter d JOIN pasien p ON (d.id_dokter = p.id_dokter)
+WHERE p.id_dokter IS NULL AND p.bulan_pendaftaran > 1 AND p.tahun_pendaftaran = 2001
+ 
+2.
+SELECT id_dokter
+FROM praktik
+WHERE hari = "Senin"
+
+
+(Orang 2 -> Joseph Angelus / c14190187)
+
+1.  
+SELECT d.nama_dokter, CONCAT(p.tanggal_praktek, " / ", p.bulan_praktek, " / ", p.tahun_praktek%100) AS "Tanggal"
+FROM dokter d JOIN praktik p ON (d.id_dokter = p.id_dokter )
+WHERE p.tanggal_praktek=1 AND p.bulan_praktek=1 AND p.tahun_praktek%100=01
+
+2. 
+SELECT p1.Nama_pasien AS "Nama Pasien"
+FROM pasien p1 JOIN pasien p2
+ON p1.ID_Pasien = p2.ID_Pasien
+WHERE p1.Nama_pasien = p2.Nama_pasien AND (p1.Bulan_pendaftaran - p2.Bulan_pendaftaran) > 3
+
+
+(Orang 3 -> David Riski Tanoto / c14190003)
+
+1.
+select ID_dokter, Nama_dokter, Pengganti_dokter
+from dokter
+where Bulan_awal_kerja=11 and Tahun_awal_kerja = 2020
+
+2.
+select d.ID_Dokter, d.Nama_dokter
+from pasien p
+join dokter d on d.ID_dokter=p.ID_Dokter
+where Tahun_pendaftaran=2020
+group by ID_Dokter
